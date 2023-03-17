@@ -124,6 +124,7 @@ h3{
 
 @media only screen and (min-width: 600px){
     main{
+        margin: 175px auto;
         width: 600px;
         height: 450px;
         display: flex;        
