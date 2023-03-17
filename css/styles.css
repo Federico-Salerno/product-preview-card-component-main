@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    
+--darkCyan: hsl(158, 36%, 37%);
+--ream: hsl(30, 38%, 92%);
+--veryArkBlue: hsl(212, 21%, 14%);
+--darkGrayishBlue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+--darkGreen: hsl(158, 36%, 20%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--ream);
+}
+
+main{
+    width: 345px;
+    height: 611px;
+    margin: 28px auto;
+    background-color: var(--White);
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.photoMobile{
+    width: 100%;    
+}
+
+.photoDesktop{
+    display: none;
+}
+.info{
+    padding: 26px 34px;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: var(--darkGrayishBlue);
+}
+
+.perfume{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+h1{
+font-family: 'Fraunces', serif;
+margin-bottom: 18px;
+font-weight: 700;
+line-height: 35px;
+}
+
+.description{
+    margin-bottom: 25px;
+}
+
+.price{
+    display: flex;
+    margin-bottom: 19px;
+}
+
+h2{
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--darkCyan);
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--darkGrayishBlue);
+    text-decoration: line-through;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    width: 291px;
+    height: 48px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--darkCyan);
+    color: var(--White);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn:hover{
+    background-color: var(--darkGreen);
+}
+.attribution{ 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+    color: var(--darkCyan);
+}
+
+@media only screen and (min-width: 600px){
+    main{
+        width: 600px;
+        height: 450px;
+        display: flex;        
+    }
+
+    .photoMobile{
+        display: none;
+    }
+
+    .photoDesktop{
+        display: block;
+        width: 100%;       
+    }
+
+    .photo, .info{
+        width: 300px;        
+    }
+
+    .btn{
+        width: 235px;
+    }
+
+    .price{
+        margin-bottom: 30px;
+    }
+}
